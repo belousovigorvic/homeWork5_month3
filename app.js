@@ -16,7 +16,7 @@ const convert = (elem, target, target2) => {
             } else if (event.target.classList.contains('usd')) {
                 target.value = (elem.value * response.usd).toFixed(2)
                 target2.value = ((elem.value * response.usd) / response.eur).toFixed(2)
-            } else if (event.target.classList.contains('eur')) {
+            } else {
                 target.value = (elem.value * response.eur).toFixed(2)
                 target2.value = ((elem.value * response.eur) / response.usd).toFixed(2)
             }
