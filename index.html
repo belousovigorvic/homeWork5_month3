@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+        .wrapper {
+            margin-top: 40px;
+            width: 40vw;
+        }
+
+        input {
+            padding: 10px 20px;
+        }
+
+        label {
+            font-size: 20px;
+        }
+
+        .item {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <h1>Currency Converter</h1>
+    <div class="som item">
+        <label for="som">Som</label>
+        <input class="som" type="number" id="som">
+    </div>
+    <div class="usd item">
+        <label for="usd">Usd</label>
+        <input class="usd" type="number" id="usd">
+    </div>
+    <div class="euro item">
+        <label for="eur">Eur</label>
+        <input class="eur" type="number" id="eur">
+    </div>
+</div>
+</body>
+<script src="app.js"></script>
+</html>
